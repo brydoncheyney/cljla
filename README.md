@@ -1,6 +1,16 @@
 # jla
 
-FIXME
+[jla]: http://www.jesuslovesamerika.co.uk
+
+## TODO
+[ ] basic routing - compojure
+[ ] basic routing - bidi
+[ ] stencil/enlive to render templates
+[ ] traversy lenses
+[ ] partial templates 
+[ ] content pulled from document store
+[ ] crud cms
+[ ] api
 
 ## Prerequisites
 
@@ -16,4 +26,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2014 FIXME
+Copyright © 2014 Brydon Cheyney
