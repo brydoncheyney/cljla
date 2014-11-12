@@ -3,14 +3,14 @@
 [jla]: http://www.jesuslovesamerika.co.uk
 
 ## TODO
-[ ] basic routing - compojure
-[ ] basic routing - bidi
-[ ] stencil/enlive to render templates
-[ ] traversy lenses
-[ ] partial templates 
-[ ] content pulled from document store
-[ ] crud cms
-[ ] api
+[ ] basic routing - compojure<br/>
+[ ] basic routing - bidi<br/>
+[ ] stencil/enlive to render templates<br/>
+[ ] traversy lenses<br/>
+[ ] partial templates <br/>
+[ ] content pulled from document store<br/>
+[ ] crud cms<br/>
+[ ] api<br/>
 
 ## Prerequisites
 
