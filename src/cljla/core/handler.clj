@@ -1,4 +1,4 @@
-(ns jla.core.handler
+(ns cljla.core.handler
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
