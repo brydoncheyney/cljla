@@ -2,18 +2,18 @@
 
 # cljla
 
-[jla]: http://www.jesuslovesamerika.co.uk
+<http://www.jesuslovesamerika.co.uk>
 
 ## TODO
-[X] update test framework to use midje<br />
-[ ] basic routing - compojure<br/>
-[ ] basic routing - bidi<br/>
-[ ] stencil/enlive to render templates<br/>
-[ ] traversy lenses<br/>
-[ ] partial templates <br/>
-[ ] content pulled from document store<br/>
-[ ] crud cms<br/>
-[ ] api<br/>
+    [X] update test framework to use midje
+    [ ] basic routing - compojure
+    [ ] basic routing - bidi
+    [ ] stencil/enlive to render templates
+    [ ] traversy lenses
+    [ ] partial templates
+    [ ] content pulled from document store
+    [ ] crud cms
+    [ ] api
 
 ## Prerequisites
 
