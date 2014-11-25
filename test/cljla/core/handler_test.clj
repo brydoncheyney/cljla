@@ -1,5 +1,5 @@
 (ns cljla.core.handler-test
-  (:require [midje.sweet :refer :all]
+  (:require [midje.sweet :refer [facts fact =>]]
             [ring.mock.request :as mock]
             [cljla.core.handler :refer :all]))
 
