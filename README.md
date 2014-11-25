@@ -1,4 +1,4 @@
-[![Build Status](https://snap-ci.com/brydoncheyney/cljla/branch/master/build_image)](https://snap-ci.com/brydoncheyney/cljla/branch/master)
+[![Build Status](https://snap-ci.com/awBfTXWE4iE6qS-2rRYzaYa0f1WdCIfGXQWfIW6XfHI/build_image)](https://snap-ci.com/brydoncheyney/cljla/branch/master)
 
 # cljla
 
