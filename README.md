@@ -1,5 +1,7 @@
 # cljla
 
+[![Build Status](https://snap-ci.com/brydoncheyney/cljla/branch/master/build_image)](https://snap-ci.com/brydoncheyney/cljla/branch/master)
+
 [jla]: http://www.jesuslovesamerika.co.uk
 
 ## TODO
