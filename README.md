@@ -1,11 +1,11 @@
-# cljla
-
 [![Build Status](https://snap-ci.com/brydoncheyney/cljla/branch/master/build_image)](https://snap-ci.com/brydoncheyney/cljla/branch/master)
+
+# cljla
 
 [jla]: http://www.jesuslovesamerika.co.uk
 
 ## TODO
-[X] update test framework to use midje
+[X] update test framework to use midje<br />
 [ ] basic routing - compojure<br/>
 [ ] basic routing - bidi<br/>
 [ ] stencil/enlive to render templates<br/>
