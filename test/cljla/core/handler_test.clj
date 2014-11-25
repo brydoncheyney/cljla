@@ -1,14 +1,13 @@
 (ns cljla.core.handler-test
-  (:require [clojure.test :refer :all]
+  (:require [midje.sweet :refer :all]
             [ring.mock.request :as mock]
             [cljla.core.handler :refer :all]))
 
-(deftest test-app
-  (testing "main route"
-    (let [response (app (mock/request :get "/"))]
-      (is (= (:status response) 200))
-      (is (= (:body response) "je$us loves amerika"))))
-  
-  (testing "not-found route"
-    (let [response (app (mock/request :get "/invalid"))]
-      (is (= (:status response) 404)))))
+(facts "about routes"
+       (fact "route found should return HTTP status code 200"
+             (let [response (app (mock/request :get "/"))]
+               (:status response) => 200
+               (:body response) => "je$us loves amerika"))
+       (fact "route not found should return HTTP status code 404"
+             (let [response (app (mock/request :get "not-found"))]
+               (:status response) => 404)))

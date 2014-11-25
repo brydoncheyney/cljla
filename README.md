@@ -3,6 +3,7 @@
 [jla]: http://www.jesuslovesamerika.co.uk
 
 ## TODO
+[X] update test framework to use midje
 [ ] basic routing - compojure<br/>
 [ ] basic routing - bidi<br/>
 [ ] stencil/enlive to render templates<br/>

@@ -1,12 +1,15 @@
 (defproject cljla "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "Je$us Loves Amerika web application"
+  :url "http://www.jesuslovesamerika.co.uk"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.2.0"]
-                 [ring/ring-defaults "0.1.2"]]
-  :plugins [[lein-ring "0.8.13"]]
+                 [ring/ring-defaults "0.1.2"]
+                 [midje "1.6.3"]]
+  :plugins [[lein-ring "0.8.13"]
+            [lein-midje "3.1.3"]]
   :ring {:handler cljla.core.handler/app}
-  :profiles
-  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
-                        [ring-mock "0.1.5"]]}})
+  :user {:plugins [[lein-midje "3.1.3"]]}
+  :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+                        [ring-mock "0.1.5"]
+                        [midje "1.6.3"]]}})
