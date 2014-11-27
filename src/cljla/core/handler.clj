@@ -19,5 +19,13 @@
            (GET "/bootstrap" [] (page "je$us loves amerika"))
            (route/not-found "Not Found"))
 
+(defn wrap-middleware
+  [app]
+  (fn [request]
+    (prn request)
+    (app request)))
+
 (def app
-  (wrap-defaults app-routes site-defaults))
+  (-> app-routes
+      (wrap-defaults site-defaults)
+      (wrap-middleware)))
