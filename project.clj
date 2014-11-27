@@ -9,7 +9,7 @@
                  [enlive "1.1.5"]]
   :plugins [[lein-ring "0.8.13"]
             [lein-midje "3.1.3"]]
-  :ring {:handler cljla.core.handler/app}
+  :ring {:handler cljla.handler/app}
   :user {:plugins [[lein-midje "3.1.3"]]}
   :profiles {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring-mock "0.1.5"]
