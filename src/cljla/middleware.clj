@@ -1,4 +1,4 @@
-(ns cljla.core.middleware)
+(ns cljla.middleware)
 
 (defn wrap-logging
   [app]

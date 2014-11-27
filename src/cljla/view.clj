@@ -1,4 +1,4 @@
-(ns cljla.core.view
+(ns cljla.view
   (:require [net.cgrand.enlive-html :as html]))
 
 (def bootstrap "public/templates/bootstrap.html")
