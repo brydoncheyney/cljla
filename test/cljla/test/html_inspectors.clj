@@ -3,7 +3,10 @@
 
 (defn has-content? [content]
   (fn [node]
-    (= (-> node :content first))))
+    (= content (-> node :content first))))
 
 (defn select [node selector]
   (html/select (html/html-snippet node) [selector]))
+
+(defn select-single [node selector]
+  (first (select node selector)))

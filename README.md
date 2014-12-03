@@ -2,13 +2,17 @@
 
 # cljla
 
+JLA website implemented in Clojure...  clj ...jla...  cljla
+
 <http://www.jesuslovesamerika.co.uk>
 
 ## TODO
     [X] update test framework to use midje
-    [ ] basic routing - compojure
+    [X] basic routing - compojure
     [ ] basic routing - bidi
-    [ ] stencil/enlive to render templates
+    [X] enlive to render templates
+    [ ] enlive to render more complex templates...
+    [ ] articles
     [ ] traversy lenses
     [ ] partial templates
     [ ] content pulled from document store

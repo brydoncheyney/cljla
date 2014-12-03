@@ -3,10 +3,15 @@
 
 (def bootstrap "public/templates/bootstrap.html")
 
-(html/deftemplate index-page bootstrap
-                  [title]
-                  [:title] (html/content title))
+(def articles-partial "public/templates/partials/articles.html")
+
+(html/defsnippet articles articles-partial [:.article] [content])
+
+(html/deftemplate index-page bootstrap [{:keys [title header]}]
+                  [:title] (html/content title)
+                  [:h1] (html/content header)
+                  [:#content] (html/content (articles {})))
 
 (defn page
-  [title]
-  (apply str (index-page title)))
+  [content]
+  (apply str (index-page content)))

@@ -3,5 +3,5 @@
 (defn wrap-logging
   [app]
   (fn [request]
-    (prn request)
+    (clojure.pprint/pprint request)
     (app request)))

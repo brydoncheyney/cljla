@@ -7,7 +7,7 @@
 
 (defroutes app-routes
            (GET "/" [] "je$us loves amerika")
-           (GET "/bootstrap" [] (view/page "je$us loves amerika"))
+           (GET "/bootstrap" [] (view/page {:title "je$us loves amerika" :header "header"}))
            (route/not-found "Not Found"))
 
 (def app
