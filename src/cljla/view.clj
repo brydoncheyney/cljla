@@ -3,14 +3,19 @@
 
 (def bootstrap "public/templates/bootstrap.html")
 
-(def articles-partial "public/templates/partials/articles.html")
+(def articles-template "public/templates/partials/articles.html")
 
-(html/defsnippet articles articles-partial [:.article] [content])
+(html/defsnippet articles-snippet articles-template [:#articles] [articles]
+                 ;[[:dl (html/but html/first-of-type)]] nil
+                 {[:dt] [:dd]}
+                 (html/clone-for [{:keys [content title]} articles]
+                                 [:dt] (html/content title)
+                                 [:dd] (html/content content)))
 
-(html/deftemplate index-page bootstrap [{:keys [title header]}]
+(html/deftemplate index-page bootstrap [{:keys [title header articles]}]
                   [:title] (html/content title)
                   [:h1] (html/content header)
-                  [:#content] (html/content (articles {})))
+                  [:#content] (html/content (articles-snippet articles)))
 
 (defn page
   [content]
