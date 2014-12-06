@@ -11,6 +11,6 @@
                                               :content "text here"}
                                              {:title "Article 2"
                                               :content "more text here"}]})]
-               (-> content (select-single [:title])) => (has-content? "foo")
-               (-> content (select-single [:h1])) => (has-content? "bar")
+               (-> content (select-single [:title])) => (has-content? "foo | bar")
+               (-> content (select-single [:h1])) => (has-content? "foo")
                (-> content (select [:dl#articles :dt]) count) => 2)))
