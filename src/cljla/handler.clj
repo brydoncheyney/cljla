@@ -41,5 +41,5 @@
 
 (def app
   (-> app-routes
-      (wrap-defaults site-defaults)
+      (wrap-defaults site-defaults)                         ;; TODO: customise
       (wrap-logging)))
