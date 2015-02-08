@@ -4,4 +4,6 @@
   (:gen-class))
 
 (defn -main []
-  (run-jetty handler/app {:port 3000}))
+  (run-jetty handler/app {:port (or (-> (System/getenv "PORT")
+                                        (Integer/parseInt))
+                                    3000)}))
