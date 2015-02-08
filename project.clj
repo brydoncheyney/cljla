@@ -8,15 +8,14 @@
                            [ring/ring-jetty-adapter "1.3.2"]
                            [midje "1.6.3"]
                            [enlive "1.1.5"]]
-            :plugins [[lein-ring "0.8.13"]
-                      [lein-midje "3.1.3"]]
+            :plugins [[lein-ring "0.8.13"]]
             :ring {:handler cljla.handler/app}
-            :user {:plugins [[lein-midje "3.1.3"]]}
-            :profiles {:dev     {:dependencies [[javax.servlet/servlet-api "2.5"]
+            :profiles {:dev     {:plugins      [[lein-midje "3.1.3"]
+                                                [lein-ancient "0.6.2"]]
+                                 :dependencies [[javax.servlet/servlet-api "2.5"]
                                                 [ring-mock "0.1.5"]
                                                 [midje "1.6.3"]]}
                        :uberjar {:aot :all}}
             :uberjar-name "cljla.jar"
             :aot :all
-            :main cljla.core
-            )
+            :main cljla.core)
