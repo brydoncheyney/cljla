@@ -11,7 +11,9 @@
             :plugins [[lein-ring "0.8.13"]]
             :ring {:handler cljla.handler/app}
             :profiles {:dev     {:plugins      [[lein-midje "3.1.3"]
-                                                [lein-ancient "0.6.2"]]
+                                                [lein-ancient "0.6.2"]
+                                                [lein-kibit "0.0.8"]
+                                                [jonase/eastwood "0.2.1"]]
                                  :dependencies [[javax.servlet/servlet-api "2.5"]
                                                 [ring-mock "0.1.5"]
                                                 [midje "1.6.3"]]}
