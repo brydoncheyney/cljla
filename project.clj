@@ -6,7 +6,6 @@
                            [compojure "1.3.1"]
                            [ring/ring-defaults "0.1.4"]
                            [ring/ring-jetty-adapter "1.3.2"]
-                           [midje "1.6.3"]
                            [enlive "1.1.5"]]
             :plugins [[lein-ring "0.8.13"]]
             :ring {:handler cljla.handler/app}
@@ -17,7 +16,6 @@
                                  :dependencies [[javax.servlet/servlet-api "2.5"]
                                                 [ring-mock "0.1.5"]
                                                 [midje "1.6.3"]]}
-                       :uberjar {:aot :all}}
-            :uberjar-name "cljla.jar"
-            :aot :all
-            :main cljla.core)
+                       :uberjar {:uberjar-name "cljla.jar"
+                                 :main         cljla.core
+                                 :aot          :all}})
