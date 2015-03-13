@@ -3,6 +3,7 @@
             [cljla.handler :as handler])
   (:gen-class))
 
-(defn -main []
+(defn -main [& args]
+  (prn "Starting application with args " args)
   (run-jetty handler/app {:port (Integer/parseInt (or (System/getenv "PORT")
                                                       "3000"))}))
