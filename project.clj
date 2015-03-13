@@ -6,7 +6,8 @@
                            [compojure "1.3.1"]
                            [ring/ring-defaults "0.1.4"]
                            [ring/ring-jetty-adapter "1.3.2"]
-                           [enlive "1.1.5"]]
+                           [enlive "1.1.5"]
+                           [environ "1.0.0"]]
             :plugins [[lein-ring "0.8.13"]]
             :ring {:handler cljla.handler/app}
             :profiles {:dev     {:plugins      [[lein-midje "3.1.3"]
