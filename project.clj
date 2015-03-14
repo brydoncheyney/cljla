@@ -3,6 +3,7 @@
             :url "http://www.jesuslovesamerika.co.uk"
             :min-lein-version "2.0.0"
             :dependencies [[org.clojure/clojure "1.6.0"]
+                           [org.clojure/tools.logging "0.3.1"]
                            [compojure "1.3.2"]
                            [ring/ring-defaults "0.1.4"]
                            [ring/ring-jetty-adapter "1.3.2"]
