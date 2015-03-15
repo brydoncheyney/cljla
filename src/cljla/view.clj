@@ -15,9 +15,9 @@
 
 (html/defsnippet articles-snippet articles-template [:#articles] [articles]
                  {[:dt] [:dd]}
-                 (html/clone-for [{:keys [content title]} articles]
-                                 [:dt] (html/content title)
-                                 [:dd] (html/content content)))
+                 (html/clone-for [{:keys [content date title]} articles]
+                                 [:dt] (html/html-content (str title " - " date))
+                                 [:dd] (html/html-content content)))
 
 (html/deftemplate index-page bootstrap [{:keys [title header navigation articles]}]
                   [:title] (html/content (str title " | " header ))
