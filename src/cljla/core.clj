@@ -6,5 +6,4 @@
 
 (defn -main [& args]
   (prn "Starting application with args " args)
-  (run-jetty handler/app {:port (Integer/parseInt (or (env :port)
-                                                      "3000"))}))
+  (run-jetty handler/app {:port (Integer/parseInt (or (env :port) "3000"))}))

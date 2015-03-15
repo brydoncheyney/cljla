@@ -1,6 +1,5 @@
 (ns cljla.middleware
-  (:require [clojure.pprint :refer [pprint]]
-            [clojure.tools.logging :as log]))
+  (:require [clojure.tools.logging :as log]))
 
 (defn wrap-logging
   [app]
