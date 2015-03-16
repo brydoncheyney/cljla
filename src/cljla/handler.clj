@@ -37,7 +37,7 @@
                             :articles   [{:title   "Falling limited edition EP"
                                           :date    "2015-02-07"
                                           :content "<p>
-	            Falling EP - available soon from <a href=\"http://www.armalyte.com/ARMCD023.htm\" title=\"Armalyte online store\">Armalyte Industries online store</a>. The SEVEN TRACK EP contains remixes from <a href=\"http://isolateband.com/\">Danny Carnage</a>, <a href=\"http://imusic.bandcamp.com/\">i!</a> and <a href=\"http://www.paresis.co.uk/\">Paresis</a>.
+	              Falling EP - available soon from <a href=\"http://www.armalyte.com/ARMCD023.htm\" title=\"Armalyte online store\">Armalyte Industries online store</a>. The SEVEN TRACK EP contains remixes from <a href=\"http://isolateband.com/\">Danny Carnage</a>, <a href=\"http://imusic.bandcamp.com/\">i!</a> and <a href=\"http://www.paresis.co.uk/\">Paresis</a>.
               </p>
               <p>
                     The Falling EP will be available at the <a href=\"http://www.brownpapertickets.com/event/1181770\">EP Launch Party</a> held at <a href=\"http://www.thepoetryclub.net/\">The Poetry Club</a> on 2015-02-07, with any remaining copies sold on online...
