@@ -2,7 +2,7 @@
   (:require [clojure.tools.logging :as log]))
 
 (defn wrap-logging
-  [app]
+  [handler]
   (fn [request]
     (log/info request)
-    (app request)))
+    (handler request)))
