@@ -4,9 +4,7 @@
             [cljla.test.html-inspectors :refer [select-single has-content?]]
             [cljla.handler :refer :all]))
 
-(def GET (partial mock/request :get))
-
-(def get-request (fn [uri] (app (GET uri))))
+(def get-request #(app (mock/request :get %)))
 
 (facts "about routes"
        (fact "route not found should return HTTP status code 404"
