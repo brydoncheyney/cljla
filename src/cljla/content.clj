@@ -35,7 +35,7 @@
               </p>
               <p class=\"flyer\">
                 <a href=\"http://www.armalyte.com/ARMCD023.htm\">
-                <img src=\"/i/ARMCD023.jpg\" alt=\"Falling limited edition EP\" /></a>
+                <img src=\"/images/ARMCD023.jpg\" alt=\"Falling limited edition EP\" /></a>
               </p>"}
                {:title   "Falling EP Release Party"
                 :date    "2015-02-07"
@@ -47,7 +47,7 @@
               <p>See the JLA <a href=\"http://www.facebook.com/jesuslovesamerika\" title=\"official facebook\">Facebook</a> page for more details...</p>
               <p class=\"flyer\">
                 <a href=\"http://www.brownpapertickets.com/event/1181770\" title=\"Brown Paper Tickets\">
-                   <img src=\"/i/20150207-flyer.jpg\" alt=\"Falling EP Release Party\" /></a>
+                   <img src=\"/images/20150207-flyer.jpg\" alt=\"Falling EP Release Party\" /></a>
               </p>"}
                {:title   "Psydoll/je&#36;us loves amerika - Ivory Blacks"
                 :date    "2014-11-19"
@@ -65,7 +65,7 @@
               </ul>
               <p>see the JLA <a href=\"http://www.facebook.com/jesuslovesamerika\" title=\"official facebook\">Facebook</a> page for contact details!</p>
               <p class=\"flyer\">
-                   <img src=\"/i/20141119-flyer.jpg\" alt=\"Ticketweb\" />
+                   <img src=\"/images/20141119-flyer.jpg\" alt=\"Ticketweb\" />
               </p>"}])
 
 (def page->news {:title  "JE$US LOVES AMERIKA"
