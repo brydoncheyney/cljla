@@ -3,7 +3,7 @@
             [cljla.test.html-inspectors :refer [select select-single has-content?]]
             [cljla.view :refer :all]))
 
-(facts "bootstrap template function should render content"
+(facts "index template function should render content"
        (let [content (page {:title    "foo"
                             :header   "bar"
                             :articles [{:title   "Article 1"

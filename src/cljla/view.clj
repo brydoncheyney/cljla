@@ -1,11 +1,11 @@
 (ns cljla.view
   (:require [net.cgrand.enlive-html :as html]))
 
-(def bootstrap "public/templates/bootstrap.html")
+(def index-template "public/templates/index.html")
 
 (def articles-template "public/templates/partials/articles.html")
 
-(html/defsnippet navigation-template bootstrap [:#navbar] [links]
+(html/defsnippet navigation-template index-template [:#navbar] [links]
                  [:ul [:li (html/but html/first-of-type)]] nil
                  [:ul [:li html/first-of-type]]
                  (html/clone-for [{:keys [text title href]} links]
@@ -19,8 +19,8 @@
                                  [:dt] (html/html-content (str title " - " date))
                                  [:dd] (html/html-content content)))
 
-(html/deftemplate index-page bootstrap [{:keys [title header navigation articles]}]
-                  [:title] (html/content (str title " | " header ))
+(html/deftemplate index-page index-template [{:keys [title header navigation articles]}]
+                  [:title] (html/content (str title " | " header))
                   [:h1] (html/content title)
                   [:#navbar] (html/content (navigation-template navigation))
                   [:#content] (html/content (articles-snippet articles)))
