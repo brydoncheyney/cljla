@@ -9,11 +9,11 @@
 (facts "about routes"
        (fact "route not found should return HTTP status code 404"
              (get-request "not-found") => (contains {:status 404 :body "Not Found"}))
-       (fact "route found should return HTTP status code 200"
-             (get-request "/") => (contains {:status 200 :body "je$us loves amerika"}))
-       (fact "bootstrap route should return HTTP status code 200"
-             (get-request "/bootstrap") => (contains {:status 200}))
-       (fact "bootstrap returns h1 content"
-             (-> (:body (get-request "/bootstrap"))
+       (fact "healthcheck route should return HTTP status code 200"
+             (get-request "/healthcheck") => (contains {:status 200 :body "je$us loves you"}))
+       (fact "root route should return HTTP status code 200"
+             (get-request "/") => (contains {:status 200}))
+       (fact "root route returns h1 content"
+             (-> (:body (get-request "/"))
                  (select-single [:h1])
                  :content) =not=> empty?))
