@@ -9,11 +9,10 @@
 (defroutes app-routes
            (GET "/" [] "je$us loves amerika")
            (GET "/bootstrap" []
-                (view/page {:title      "JE$US LOVES AMERIKA"
-                            :header     "Home"
-                            :navigation content/navigation
-                            :articles   content/articles}))
-           (route/not-found "Not Found"))
+                (view/page (merge content/page->news
+                                  {:navigation content/navigation
+                                   :articles   content/articles})))
+           (route/not-found (:content content/page->not-found)))
 
 (def app
   (-> app-routes

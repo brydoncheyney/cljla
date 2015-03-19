@@ -67,3 +67,8 @@
               <p class=\"flyer\">
                    <img src=\"/i/20141119-flyer.jpg\" alt=\"Ticketweb\" />
               </p>"}])
+
+(def page->news {:title  "JE$US LOVES AMERIKA"
+                 :header "Home"})
+
+(def page->not-found {:content "Not Found"})
