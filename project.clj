@@ -4,9 +4,9 @@
             :min-lein-version "2.0.0"
             :dependencies [[org.clojure/clojure "1.6.0"]
                            [org.clojure/tools.logging "0.3.1"]
-                           [compojure "1.3.2"]
+                           [compojure "1.3.3"]
                            [ring/ring-defaults "0.1.4"]
-                           [ring/ring-jetty-adapter "1.3.3"]
+                           [ring/ring-jetty-adapter "1.3.2"]
                            [enlive "1.1.5"]
                            [environ "1.0.0"]]
             :plugins [[lein-ring "0.8.13"]]
