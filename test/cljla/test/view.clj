@@ -1,6 +1,7 @@
 (ns cljla.test.view
   (:require [midje.sweet :refer [facts fact =>]]
             [cljla.test.html-inspectors :refer [select select-single has-content?]]
+            [cljla.test.selectors :as selectors]
             [cljla.view :refer :all]))
 
 (facts "index template function should render content"
@@ -17,6 +18,6 @@
          (fact "h1"
                (-> content (select-single [:h1])) => (has-content? "foo"))
          (fact "articles"
-               (-> content (select [:dl#articles :dt]) count) => 2)
+               (-> content (select selectors/news->articles->titles) count) => 2)
          (fact "article title"
-               (-> content (select [:dl#articles :dt]) first) => (has-content? "Article 1 - 2015-01-01"))))
+               (-> content (select selectors/news->articles->titles) first) => (has-content? "Article 1 - 2015-01-01"))))
