@@ -2,7 +2,7 @@
             :description "Je$us Loves Amerika web application"
             :url "http://www.jesuslovesamerika.co.uk"
             :min-lein-version "2.0.0"
-            :dependencies [[org.clojure/clojure "1.6.0"]
+            :dependencies [[org.clojure/clojure "1.7.0"]
                            [org.clojure/tools.logging "0.3.1"]
                            [compojure "1.3.4"]
                            [ring/ring-defaults "0.1.5"]
