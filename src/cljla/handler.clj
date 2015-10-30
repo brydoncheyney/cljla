@@ -14,6 +14,7 @@
                                   {:navigation content/navigation
                                    :articles   content/articles})))
            (GET "/healthcheck" [] (healthcheck))
+           (GET "/enqueue" [] {:headers {"Content-type" "plain-text"} :body "enqueuing"})
            (route/not-found (:content content/page->not-found)))
 
 (def app
