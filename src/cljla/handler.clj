@@ -1,6 +1,7 @@
 (ns cljla.handler
   (:require [compojure.core :refer [defroutes GET]]
             [compojure.route :as route]
+            [ring.util.response :refer [response header status]]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
             [ring.middleware.json :refer [wrap-json-response wrap-json-body]]
             [clojure.core.async :refer [chan close! thread go >!! <!!]]
@@ -30,7 +31,9 @@
                                 :articles   content/articles})))
            (GET "/healthcheck" [] (healthcheck))
            (GET "/enqueue/:item" [item] (do (enqueue item)
-                                            {:headers {"Content-type" "plain-text"} :body "enqueuing"}))
+                                            (-> (response "enqueuing")
+                                                (status 202)
+                                                (header "content-type" :plain/text))))
            (route/not-found (:content content/page->not-found)))
 
 (def app
