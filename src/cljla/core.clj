@@ -2,19 +2,20 @@
   (:require [ring.adapter.jetty :refer [run-jetty]]
             [com.stuartsierra.component :as component]
             [environ.core :refer [env]]
-            [cljla.handler :as handler])
+            [cljla.handler :as handler]
+            [clojure.tools.logging :as log])
   (:gen-class))
 
 (defrecord ApplicationComponent [port]
   component/Lifecycle
 
   (start [component]
-    (prn (format ";; starting ApplicationComponent on port %s" port))
+    (log/info (format ";; starting ApplicationComponent on port %s" port))
     (let [application (run-jetty handler/app {:port port :join? false})]
       (assoc component :application application)))
 
   (stop [component]
-    (prn ";; stopping ApplicationComponent")
+    (log/info ";; stopping ApplicationComponent")
     (when-let [application (:application component)]
       (.stop application)
       (.join application))
@@ -36,7 +37,7 @@
   (.addShutdownHook (Runtime/getRuntime) (Thread. f)))
 
 (defn -main [& args]
-  (prn "Starting application with args " args)
+  (log/info ";; starting application with args" args)
   (let [system (component/start-system (system port))]
-    (prn ";; started system")
+    (log/info ";; started system")
     (shutdown-hook #(component/stop-system system))))

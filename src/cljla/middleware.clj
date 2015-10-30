@@ -5,7 +5,7 @@
 (defn wrap-request-logging
   [handler]
   (fn [request]
-    (log/info request)
+    (log/debug request)
     (handler request)))
 
 (defn wrap-json-response-headers

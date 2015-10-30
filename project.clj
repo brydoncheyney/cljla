@@ -4,6 +4,7 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/tools.logging "0.3.1"]
+                 [org.clojure/core.async "0.2.371"]
                  [compojure "1.4.0"]
                  [com.stuartsierra/component "0.3.0"]
                  [ring/ring-defaults "0.1.5"]
