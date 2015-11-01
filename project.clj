@@ -21,7 +21,8 @@
                                       [jonase/eastwood "0.2.1"]]
                        :dependencies [[javax.servlet/servlet-api "2.5"]
                                       [ring-mock "0.1.5"]
-                                      [midje "1.8.1" :exclusions [commons-codec]]]}
+                                      [midje "1.8.1" :exclusions [commons-codec]]
+                                      [commons-codec "1.10"]]}
              :uberjar {:uberjar-name "cljla.jar"
                        :main         cljla.core
                        :aot          :all}})
