@@ -4,7 +4,7 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [org.clojure/core.async "0.2.371"]
+                 [org.clojure/core.async "0.2.374"]
                  [compojure "1.4.0"]
                  [com.stuartsierra/component "0.3.0"]
                  [ring/ring-defaults "0.1.5"]
@@ -21,7 +21,7 @@
                                       [jonase/eastwood "0.2.1"]]
                        :dependencies [[javax.servlet/servlet-api "2.5"]
                                       [ring-mock "0.1.5"]
-                                      [midje "1.8.1" :exclusions [commons-codec]]
+                                      [midje "1.8.2" :exclusions [commons-codec]]
                                       [commons-codec "1.10"]]}
              :uberjar {:uberjar-name "cljla.jar"
                        :main         cljla.core
