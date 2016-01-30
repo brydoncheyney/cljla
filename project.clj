@@ -11,14 +11,14 @@
                  [ring/ring-jetty-adapter "1.4.0"]
                  [ring/ring-json "0.4.0"]
                  [enlive "1.1.6"]
-                 [environ "1.0.1"]]
+                 [environ "1.0.2"]]
   :plugins [[lein-ring "0.8.13"]]
   :ring {:handler cljla.handler/app}
   :main cljla.core
   :profiles {:dev     {:plugins      [[lein-midje "3.1.3"]
-                                      [lein-ancient "0.6.7"]
+                                      [lein-ancient "0.6.8"]
                                       [lein-kibit "0.1.2"]
-                                      [jonase/eastwood "0.2.1"]]
+                                      [jonase/eastwood "0.2.3"]]
                        :dependencies [[javax.servlet/servlet-api "2.5"]
                                       [ring-mock "0.1.5"]
                                       [midje "1.8.3" :exclusions [commons-codec]]
