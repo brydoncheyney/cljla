@@ -30,7 +30,7 @@
   (component/system-map
     :app (new-application port)))
 
-(def port (Integer/parseInt (or (env :port) "3000")))
+(def port (Integer. (or (env :port) "3000")))
 
 (defn shutdown-hook
   [f]
