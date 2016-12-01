@@ -4,14 +4,14 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [org.clojure/core.async "0.2.374"]
-                 [compojure "1.4.0"]
+                 [org.clojure/core.async "0.2.395"]
+                 [compojure "1.5.1"]
                  [com.stuartsierra/component "0.3.1"]
-                 [ring/ring-defaults "0.1.5"]
-                 [ring/ring-jetty-adapter "1.4.0"]
+                 [ring/ring-defaults "0.2.1"]
+                 [ring/ring-jetty-adapter "1.5.0"]
                  [ring/ring-json "0.4.0"]
                  [enlive "1.1.6"]
-                 [environ "1.0.2"]]
+                 [environ "1.1.0"]]
   :plugins [[lein-ring "0.8.13"]]
   :ring {:handler cljla.handler/app}
   :main cljla.core
